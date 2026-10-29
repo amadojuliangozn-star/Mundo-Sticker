@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark" style="color-scheme: dark;"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mundo Stickers · DTF UV, holográficos, vinilo de corte y vinilo UV</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&amp;family=Figtree:wght@400;600&amp;display=swap">
+<style>
+:root{
+  --paper:#FFE4EF; --surface:#FFF7FA; --ink:#4A2358; --muted:#7A4F8C;
+  --pink:#FF6FA8; --yellow:#C7B3F5; --mint:#FFB8D5; --line:#F5BED6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+:root{color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Figtree,system-ui,sans-serif;font-size:17px;line-height:1.55}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--pink);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.4rem;text-decoration:none}
+nav a{margin-left:18px;text-decoration:none;font-weight:600}
+nav a:hover{text-decoration:underline;text-decoration-color:var(--pink);text-underline-offset:5px;text-decoration-thickness:3px}
+.btn{display:inline-block;background:var(--pink);color:#3A1448;font-weight:600;border:0;border-radius:999px;padding:14px 26px;font-size:1rem;text-decoration:none;cursor:pointer;font-family:inherit}
+.btn:hover{background:#ff86b6}
+.btn.alt{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;padding:36px 0 72px}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.8rem);font-weight:800;letter-spacing:-.02em}
+.hero p{max-width:30em;color:var(--muted);font-size:1.15rem;margin:20px 0 28px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.sheet{position:relative;aspect-ratio:1/1;max-width:480px;width:100%;margin-left:auto;background:var(--surface);border-radius:18px;border:2px dashed var(--line);transform:rotate(2deg);animation:drop .7s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes drop{from{transform:translateY(-40px) rotate(-6deg);opacity:0}to{transform:rotate(2deg);opacity:1}}
+.stk{position:absolute;display:grid;place-items:center;text-align:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--ink);
+  filter:drop-shadow(0 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 6px 8px rgba(18,20,58,.25));transition:transform .25s}
+.stk:hover{transform:rotate(0deg) scale(1.08)!important}
+.s1{left:6%;top:7%;width:46%;aspect-ratio:1;background:var(--yellow);clip-path:polygon(50% 0,61% 18%,82% 10%,80% 32%,100% 42%,82% 56%,90% 80%,67% 76%,50% 100%,36% 78%,12% 84%,18% 58%,0 44%,20% 32%,16% 10%,38% 18%);font-size:1.55rem;transform:rotate(-8deg);line-height:1}
+.s2{right:5%;top:10%;width:38%;aspect-ratio:1;background:var(--pink);border-radius:50%;color:#3A1448;font-size:1.05rem;transform:rotate(9deg);padding:10px}
+.s3{left:10%;bottom:9%;width:52%;height:22%;background:var(--mint);border-radius:999px;font-size:1.05rem;transform:rotate(-4deg)}
+.s4{right:6%;bottom:12%;width:30%;aspect-ratio:1;background:var(--ink);color:var(--paper);border-radius:30% 70% 60% 40%/50% 40% 60% 50%;font-size:1.4rem;transform:rotate(12deg)}
+.s5{left:38%;top:46%;width:24%;aspect-ratio:1;background:linear-gradient(135deg,#FFB8D5,#C7B3F5,#A8E6F5,#FFF1A8);border-radius:22%;font-size:2.1rem;transform:rotate(-14deg)}
+
+/* sections */
+section{padding:64px 0}
+section h2{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:-.01em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:36em;margin:0 0 36px}
+.prods{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.prod{background:var(--surface);border:2px solid var(--line);border-radius:22px;padding:24px}
+.prod:nth-child(2){border-radius:22px 22px 60px 22px}
+.prod:nth-child(3){border-radius:60px 22px 22px 22px}
+.prod h3{font-size:1.45rem;margin:14px 0 8px}
+.prod p{margin:0;color:var(--muted);font-size:.98rem}
+.dot{display:block;width:44px;height:44px;border-radius:50%}
+.prod:nth-child(1) .dot{background:var(--pink)}
+.prod:nth-child(2) .dot{background:var(--yellow)}
+.prod:nth-child(3) .dot{background:linear-gradient(135deg,#FFB8D5,#C7B3F5,#A8E6F5,#FFF1A8,#FFB8D5)}
+.prod:nth-child(4) .dot{background:var(--mint)}
+.prod:nth-child(5) .dot{background:linear-gradient(135deg,#FFB8D5,#C7B3F5,#A8E6F5,#FFF1A8,#FFB8D5)}
+.prod:nth-child(5){border-radius:22px 60px 22px 22px}
+.uses{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.uses li{background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:8px 18px;font-weight:600}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px;counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;position:relative;padding-top:56px}
+.steps li::before{content:counter(s);position:absolute;top:0;left:0;width:42px;height:42px;border-radius:50%;background:var(--yellow);color:#4A2358;display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.2rem}
+.steps h3{font-size:1.25rem;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted)}
+
+/* pedido */
+.order{background:#FFB8D5;color:var(--ink);border-radius:28px;padding:40px 28px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.order h2{color:var(--ink)}
+.order p{color:var(--ink);margin:0}
+.order .btn{background:var(--ink);color:#fff}
+.order .btn:hover{background:#6b3a7d}
+.form{display:grid;gap:14px}
+.form label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+.form select,.form input,.form textarea{font:inherit;padding:12px 14px;border-radius:12px;border:2px solid transparent;background:#fff;color:#4A2358;width:100%}
+.form textarea{min-height:84px;resize:vertical}
+.stock-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:18px}
+.card{margin:0;background:var(--surface);border:2px solid var(--line);border-radius:20px;padding:12px;display:grid;gap:8px;align-content:start}
+.card img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:14px}
+.card figcaption{display:grid;gap:4px;font-size:.95rem}
+.card figcaption span{color:var(--muted);font-size:.9rem}
+.card.out img{opacity:.45;filter:grayscale(.6)}
+.btn.mini{padding:8px 14px;font-size:.9rem}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.admin{background:var(--surface);border:2px dashed var(--pink);border-radius:18px;padding:18px;margin-bottom:24px;display:grid;gap:12px}
+.admin p{margin:0;color:var(--muted)}
+.arow{display:grid;grid-template-columns:48px 1fr 84px auto;gap:8px;align-items:center}
+.arow img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:8px}
+.arow input{font:inherit;padding:8px 10px;border-radius:10px;border:2px solid var(--line);width:100%;background:#fff;color:var(--ink)}
+/* tablero de stickers kawaii */
+.board{position:relative;aspect-ratio:1/1;max-width:480px;width:100%;margin-left:auto;border-radius:26px;border:2px solid var(--line);background:radial-gradient(circle,rgba(255,255,255,.75) 1.6px,transparent 2px) 0 0/22px 22px,#D9C8F7;box-shadow:0 18px 40px rgba(74,35,88,.18);transform:rotate(2deg)}
+.board::after{content:'';position:absolute;right:0;bottom:0;width:54px;height:54px;border-bottom-right-radius:26px;background:linear-gradient(135deg,var(--paper) 50%,#fff 50%,#F3D3E3 100%);box-shadow:-4px -4px 10px rgba(74,35,88,.12);transition:width .3s,height .3s}
+.board:hover::after{width:74px;height:74px}
+.st{position:absolute;transform:rotate(var(--r));filter:drop-shadow(4px 0 0 #fff) drop-shadow(-4px 0 0 #fff) drop-shadow(0 4px 0 #fff) drop-shadow(0 -4px 0 #fff) drop-shadow(0 8px 10px rgba(74,35,88,.22));animation:pop .6s cubic-bezier(.3,1.6,.5,1) var(--d) both,float 4.5s ease-in-out calc(var(--d) + .6s) infinite alternate}
+.shape{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;color:#4A2358;transition:transform .25s}
+.st:hover .shape{transform:scale(1.08) rotate(-3deg)}
+.lbl{font-size:clamp(1.2rem,3.8vw,1.8rem);line-height:1;letter-spacing:.01em;text-align:center}
+.k1{left:3%;top:4%;width:40%;aspect-ratio:1}
+.k1 .shape{background:var(--yellow);clip-path:polygon(50% 0,61% 18%,82% 10%,80% 32%,100% 42%,82% 56%,90% 80%,67% 76%,50% 100%,36% 78%,12% 84%,18% 58%,0 44%,20% 32%,16% 10%,38% 18%)}
+.k2{right:4%;top:6%;width:30%;aspect-ratio:1}
+.k2 .shape{background:var(--pink);border-radius:50%}
+.k2 .lbl,.k3 .lbl{font-size:clamp(1.15rem,3.2vw,1.55rem)}
+.k4 .lbl{font-size:clamp(.85rem,2.4vw,1.1rem);padding:0 10px}
+.k3{left:6%;top:38%;width:28%;aspect-ratio:1}
+.k3 .shape{border-radius:38%;background:linear-gradient(120deg,#FFB8D5,#C7B3F5,#A8E6F5,#FFF1A8,#FFB8D5);background-size:300% 300%;animation:shine 6s ease-in-out infinite alternate}
+.k4{right:3%;top:46%;width:38%;height:17%}
+.k4 .shape{border-radius:999px;background:var(--mint);flex-direction:row;gap:10px}
+.k4 .face{margin:0}
+.face{display:block;position:relative;width:46px;height:24px;background:radial-gradient(circle at -3px 80%,#FF8FB8 0 6px,transparent 7px),radial-gradient(circle at calc(100% + 3px) 80%,#FF8FB8 0 6px,transparent 7px)}
+.face::before,.face::after{content:'';position:absolute;top:1px;left:6px;width:9px;height:9px;border-radius:50%;background:#4A2358;animation:blink 4.2s infinite}
+.face::after{left:auto;right:6px}
+.face i{position:absolute;left:50%;bottom:1px;width:12px;height:7px;border-bottom:3px solid #4A2358;border-radius:0 0 12px 12px;transform:translateX(-50%)}
+.spark{position:absolute;font-size:1.5rem;color:var(--pink);animation:twinkle 2.4s ease-in-out infinite}
+.sp1{left:36%;top:33%}
+.sp2{left:62%;top:35%;color:#A58BE8;animation-delay:.8s}
+.sp3{left:49%;top:31%;animation-delay:1.5s}
+@keyframes pop{from{scale:.2;opacity:0}to{scale:1;opacity:1}}
+@keyframes float{from{transform:translateY(0) rotate(var(--r))}to{transform:translateY(-9px) rotate(calc(var(--r) + 3deg))}}
+@keyframes twinkle{0%,100%{opacity:.3;transform:scale(.7)}50%{opacity:1;transform:scale(1.15) rotate(20deg)}}
+@keyframes shine{from{background-position:0 50%}to{background-position:100% 50%}}
+@keyframes blink{0%,94%,100%{transform:scaleY(1)}97%{transform:scaleY(.1)}}
+.mascot{position:absolute;left:27%;bottom:3%;width:46%;height:50%;pointer-events:none;animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-4px)}}
+.st{cursor:grab;touch-action:none}
+.lg{overflow:visible}
+.lg text{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;fill:#4A2358;text-anchor:middle}
+.lg text.pk{fill:#C23B7A}
+.lg text.wh{fill:#fff}
+.g1{left:3%;top:3%;width:34%;aspect-ratio:1}
+.g2{left:37%;top:1%;width:28%;aspect-ratio:1}
+.g3{right:2%;top:3%;width:31%;aspect-ratio:1}
+.g4{left:4%;top:39%;width:31%;aspect-ratio:1}
+.g5{right:3%;top:38%;width:33%;aspect-ratio:1}
+.sweep{animation:sweep 3.6s ease-in-out infinite}
+@keyframes sweep{from{transform:translateX(-120px) skewX(-20deg)}to{transform:translateX(260px) skewX(-20deg)}}
+.st.drag{cursor:grabbing;animation-play-state:paused,paused}
+.st.drag .shape{transform:scale(1.12) rotate(-4deg)}
+.mascot *{pointer-events:auto;cursor:pointer}
+.mascot.jump{animation:jump .55s ease-out}
+@keyframes jump{0%{transform:none}30%{transform:translateY(-16px) scale(.96,1.05)}60%{transform:translateY(0) scale(1.04,.96)}100%{transform:none}}
+.bubble{position:absolute;left:50%;top:29%;transform:translateX(-50%);max-width:46%;background:#fff;color:#4A2358;border-radius:16px;padding:8px 12px;font-weight:600;font-size:.9rem;line-height:1.25;text-align:center;box-shadow:0 6px 14px rgba(74,35,88,.2);z-index:50;pointer-events:none}
+.bubble::after{content:'';position:absolute;left:50%;bottom:-7px;width:14px;height:14px;background:#fff;transform:translateX(-50%) rotate(45deg);border-radius:3px}
+.hint{position:absolute;left:14px;bottom:12px;max-width:24%;font-size:.75rem;line-height:1.25;font-weight:600;color:#4A2358;opacity:.75}
+/* orden general */
+section{padding:56px 0}
+.prod{display:grid;align-content:start;transition:transform .2s,box-shadow .2s}
+.prod:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(74,35,88,.12)}
+.prod:nth-child(n){border-radius:22px}
+@media (max-width:820px){.board{margin:10px auto 0;max-width:380px}}
+@media (prefers-reduced-motion:reduce){.st,.spark,.mascot,.mascot.jump,.sweep,.k3 .shape,.face::before,.face::after{animation:none}.prod,.board::after,.shape{transition:none}}
+footer{padding:36px 0 48px;color:var(--muted);font-size:.95rem}
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:12px}
+  .sheet{margin:10px auto 0;max-width:380px}
+  .order{grid-template-columns:1fr;padding:28px 20px}
+  nav a:not(.btn){display:none}
+}
+@media (prefers-reduced-motion:reduce){.sheet{animation:none}.stk{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="logo" href="#inicio">Mundo Stickers</a>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="#stock">Stock</a>
+      <a href="#como">Cómo pedir</a>
+      <a class="btn" href="#pedido">Pedir presupuesto</a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <div class="hero">
+      <div>
+        <h1>Stickers que aguantan todo.</h1>
+        <p>Stickers DTF UV, holográficos, vinilo de corte y vinilo UV para vasos, termos, cuadernos, notebooks y lo que se te ocurra. Con tu diseño, en la cantidad que necesites.</p>
+        <div class="cta">
+          <a class="btn" href="#pedido">Pedir presupuesto</a>
+          <a class="btn alt" href="#productos">Ver productos</a>
+        </div>
+      </div>
+      <div class="board" aria-hidden="true">
+        <div class="st g1" style="--r:-8deg;--d:.1s"><svg class="shape lg" viewBox="0 0 200 200" aria-hidden="true"><polygon points="100,0 122,36 164,20 160,64 200,84 164,112 180,160 134,152 100,200 72,156 24,168 36,116 0,88 40,64 32,20 76,36" fill="#C7B3F5" stroke="#C7B3F5" stroke-width="6" stroke-linejoin="round"></polygon><circle cx="100" cy="100" r="62" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"></circle><text x="100" y="108" font-size="46">DTF</text><text class="pk" x="100" y="146" font-size="34">UV</text></svg></div>
+        <div class="st g2" style="--r:6deg;--d:.22s"><svg class="shape lg" viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="gA" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF9CC4"></stop><stop offset="1" stop-color="#C7B3F5"></stop></linearGradient></defs><circle cx="100" cy="100" r="96" fill="url(#gA)"></circle><circle cx="100" cy="100" r="80" fill="none" stroke="#fff" stroke-width="3"></circle><ellipse cx="70" cy="48" rx="40" ry="16" fill="#fff" opacity=".5" transform="rotate(-28 70 48)"></ellipse><text x="100" y="98" font-size="34">VINILO</text><text x="100" y="152" font-size="56">UV</text></svg></div>
+        <div class="st g3" style="--r:-5deg;--d:.34s"><svg class="shape lg" viewBox="0 0 200 200" aria-hidden="true"><defs><linearGradient id="gH" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFB8D5"></stop><stop offset=".3" stop-color="#C7B3F5"></stop><stop offset=".6" stop-color="#A8E6F5"></stop><stop offset=".85" stop-color="#FFF1A8"></stop><stop offset="1" stop-color="#FFB8D5"></stop></linearGradient><clipPath id="cH"><rect x="4" y="4" width="192" height="192" rx="56"></rect></clipPath></defs><rect x="4" y="4" width="192" height="192" rx="56" fill="url(#gH)"></rect><g clip-path="url(#cH)"><rect class="sweep" x="0" y="-20" width="38" height="240" fill="#fff" opacity=".55"></rect></g><rect x="20" y="20" width="160" height="160" rx="42" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"></rect><text class="wh" x="100" y="82" font-size="36">✦</text><text x="100" y="118" font-size="28" textLength="150" lengthAdjust="spacingAndGlyphs">Holográficos</text><text class="wh" x="64" y="156" font-size="22">✦</text><text class="wh" x="136" y="156" font-size="22">✦</text></svg></div>
+        <div class="st g4" style="--r:-4deg;--d:.46s"><svg class="shape lg" viewBox="0 0 200 200" aria-hidden="true"><rect x="4" y="4" width="192" height="192" rx="56" fill="#A8E6F5"></rect><rect x="18" y="18" width="164" height="164" rx="44" fill="none" stroke="#fff" stroke-width="3.5" stroke-dasharray="9 7" stroke-linecap="round"></rect><text x="44" y="46" font-size="28" transform="rotate(-20 44 38)">✂</text><text x="100" y="108" font-size="46">Vinilo</text><text x="100" y="150" font-size="34">de corte</text></svg></div>
+        <div class="st g5" style="--r:5deg;--d:.58s"><svg class="shape lg" viewBox="0 0 200 200" aria-hidden="true"><path d="M100 184 C18 124 6 84 6 60 C6 30 30 12 56 12 C76 12 92 24 100 40 C108 24 124 12 144 12 C170 12 194 30 194 60 C194 84 182 124 100 184Z" fill="#FFD1A0" stroke="#FFD1A0" stroke-width="4" stroke-linejoin="round"></path><text class="pk" x="100" y="66" font-size="26">♥</text><text x="100" y="102" font-size="19" textLength="140" lengthAdjust="spacingAndGlyphs">Personalizados</text><path d="M50 124 q10 -10 20 0 t20 0 t20 0 t20 0 t20 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"></path></svg></div>
+        <span class="spark sp1">✦</span><span class="spark sp2">✦</span><span class="spark sp3">✦</span>
+        <svg class="mascot" viewBox="0 0 200 220" aria-hidden="true">
+          <path d="M150 205 Q192 196 186 150" fill="none" stroke="#2A2438" stroke-width="14" stroke-linecap="round"></path>
+          <path d="M72 142 Q38 130 30 72" fill="none" stroke="#2A2438" stroke-width="15" stroke-linecap="round"></path>
+          <path d="M128 142 Q162 130 170 72" fill="none" stroke="#2A2438" stroke-width="15" stroke-linecap="round"></path>
+          <path d="M62 132 Q100 118 138 132 L156 216 L44 216Z" fill="#2A2438"></path>
+          <ellipse cx="100" cy="176" rx="30" ry="36" fill="#3E3555"></ellipse>
+          <path d="M100 158 L105 170 L118 171 L108 179 L111 192 L100 185 L89 192 L92 179 L82 171 L95 170Z" fill="#C7B3F5" stroke="#fff" stroke-width="3" stroke-linejoin="round"></path>
+          <path d="M56 56 L64 8 L100 40Z" fill="#2A2438"></path><path d="M144 56 L136 8 L100 40Z" fill="#2A2438"></path>
+          <path d="M65 46 L68 22 L86 38Z" fill="#FF8FB8"></path><path d="M135 46 L132 22 L114 38Z" fill="#FF8FB8"></path>
+          <ellipse cx="100" cy="88" rx="52" ry="44" fill="#2A2438"></ellipse>
+          <circle cx="82" cy="88" r="8" fill="#FFE27A"></circle><circle cx="118" cy="88" r="8" fill="#FFE27A"></circle>
+          <ellipse class="pupil" cx="82" cy="88" rx="3" ry="6.5" fill="#1B1626"></ellipse><ellipse class="pupil" cx="118" cy="88" rx="3" ry="6.5" fill="#1B1626"></ellipse>
+          <circle cx="85" cy="85" r="2" fill="#fff"></circle><circle cx="121" cy="85" r="2" fill="#fff"></circle>
+          <ellipse cx="68" cy="104" rx="9" ry="5.5" fill="#FF8FB8" opacity=".7"></ellipse><ellipse cx="132" cy="104" rx="9" ry="5.5" fill="#FF8FB8" opacity=".7"></ellipse>
+          <path d="M95 99 L105 99 L100 105Z" fill="#FF8FB8"></path>
+          <path d="M100 105 Q94 113 88 109 M100 105 Q106 113 112 109" fill="none" stroke="#FFB8D5" stroke-width="2.6" stroke-linecap="round"></path>
+          <path d="M56 96 L38 92 M56 102 L38 104 M144 96 L162 92 M144 102 L162 104" stroke="#E9DDFB" stroke-width="2" stroke-linecap="round"></path>
+          <circle cx="30" cy="70" r="11" fill="#2A2438"></circle><circle cx="170" cy="70" r="11" fill="#2A2438"></circle>
+          <circle cx="30" cy="73" r="4" fill="#FF8FB8"></circle><circle cx="170" cy="73" r="4" fill="#FF8FB8"></circle>
+        </svg>
+        <div class="bubble" id="bubble" hidden=""></div>
+        <div class="hint">Arrastrá los stickers · tocá al gato</div>
+      </div>
+    </div>
+
+    <section id="productos">
+      <h2>Qué hacemos</h2>
+      <p class="lead">Cada técnica sirve para algo distinto. Si no sabés cuál te conviene, contanos qué querés decorar y te decimos.</p>
+      <div class="prods">
+        <article class="prod"><span class="dot"></span><h3>Sticker DTF UV</h3><p>Relieve y brillo. Se transfieren a superficies duras como vasos, termos, tazas y cuadernos, sin vinilo de fondo.</p></article>
+        
+        <article class="prod"><span class="dot"></span><h3>Vinilo de corte</h3><p>Stickers clásicos cortados a la forma de tu diseño, en vinilo común o en vinilo UV con más brillo y resistencia. Ideales para packaging, notebooks y regalos.</p></article>
+        <article class="prod"><span class="dot"></span><h3>Stickers holográficos</h3><p>Brillo tornasolado que cambia de color según cómo les dé la luz. Perfectos para llamar la atención en notebooks, celulares y packaging.</p></article>
+        <article class="prod"><span class="dot"></span><h3>Packs y planchas</h3><p>Hojas con varios diseños para vender, regalar o coleccionar. Armamos la plancha con vos.</p></article>
+      </div>
+    </section>
+
+    <section id="stock">
+      <h2>Stock disponible</h2>
+      <p class="lead">Estos son los stickers que tenemos ahora. Tocá uno para pedirlo.</p>
+      <div id="admin-slot"></div>
+      <p id="stock-empty" class="lead" hidden="">Estamos cargando el stock. Mientras tanto, pedinos lo que busques por WhatsApp.</p>
+      <div id="stock-grid" class="stock-grid"></div>
+      <script type="application/json" id="stock-data">[{"id":"3a35e1eeddce6ffbecc2ede5d95500ff","name":"Holograficos"},{"id":"d63e02ef15fc524d123b37e80723e21b","name":"CARC Holografico"},{"id":"10735b6cf97b0133c87ca2a7ab1b31b9","name":"NOB Holografico"},{"id":"35719c06e00c05461451f42324276d79","name":"Planchas DTF UV CARC Y NOB"},{"id":"f30b8099d315e7722f330984f864f0d9","name":"Planchas DTF UV"},{"id":"5ab4dfb7817a5bfec3f27f4d1b245601","name":"Rosario Central holografico"},{"id":"981466e5a80f00f36b31682abc60e91b","name":"Planchas DTF UV"},{"id":"54d5fa18a4e28a6cd3ad323814c3e245","name":"DTF UV"},{"id":"f10900ad7be4315b963476c15c73161a","name":"Holografico"},{"id":"9bf6ce85a5809f5a1f1e33f128693244","name":"Holografico"}]</script>
+    </section>
+
+    <section>
+      <h2>Dónde van</h2>
+      <p class="lead">Algunas ideas de lo que nos piden más seguido.</p>
+      <ul class="uses">
+        <li>Vasos y termos</li><li>Tazas</li><li>Notebooks</li><li>Cuadernos y agendas</li><li>Cascos</li><li>Packaging de emprendimientos</li><li>Remeras y buzos</li><li>Souvenirs</li>
+      </ul>
+    </section>
+
+    <section id="como">
+      <h2>Cómo pedir</h2>
+      <p class="lead">Tres pasos y por WhatsApp.</p>
+      <ol class="steps">
+        <li><h3>Mandanos tu diseño</h3><p>En PNG o PDF, o una idea y lo armamos juntos.</p></li>
+        <li><h3>Aprobá el boceto</h3><p>Te pasamos cómo va a quedar y el precio antes de imprimir.</p></li>
+        <li><h3>Recibilo o retiralo</h3><p>Te avisamos cuando está listo y coordinamos el envío.</p></li>
+      </ol>
+    </section>
+
+    <section id="pedido">
+      <div class="order">
+        <div>
+          <h2>Pedí tu presupuesto</h2>
+          <p>Completá lo que sepas. Se abre WhatsApp con el mensaje armado y lo mandás vos.</p>
+        </div>
+        <div class="form">
+          <label>Qué querés
+            <select id="tipo">
+              <option>Sticker DTF UV</option>
+              
+              <option>Stickers holográficos</option>
+              <option>Vinilo de corte</option>
+              <option>Vinilo UV</option>
+              
+              <option>Pack o plancha</option>
+              <option>No sé, necesito consejo</option>
+            </select>
+          </label>
+          <label>Cantidad aproximada
+            <input id="cant" type="number" min="1" inputmode="numeric" placeholder="Ej: 50">
+          </label>
+          <label>Contanos más
+            <textarea id="det" placeholder="Tamaño, dónde lo vas a pegar, fecha que lo necesitás…"></textarea>
+          </label>
+          <button class="btn" id="enviar" type="button">Enviar por WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Mundo Stickers</strong> · Stickers DTF UV, holográficos, vinilo de corte y vinilo UV · Hacemos envíos a todo el país.
+  </footer>
+</div>
+<script>
+  var WHATSAPP = "5493364027044";
+  document.getElementById("enviar").addEventListener("click", function () {
+    var tipo = document.getElementById("tipo").value;
+    var cant = document.getElementById("cant").value;
+    var det = document.getElementById("det").value.trim();
+    var msg = "Hola Mundo Stickers! Quiero pedir presupuesto de: " + tipo + "." +
+      (cant ? " Cantidad: " + cant + "." : "") +
+      (det ? " Detalles: " + det : "");
+    window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  });
+
+  // ---- Tablero interactivo ----
+  (function () {
+    var board = document.querySelector(".board");
+    if (!board) return;
+    var cat = board.querySelector(".mascot");
+    var bubble = document.getElementById("bubble");
+    var pupils = board.querySelectorAll(".pupil");
+    var frases = ["¡Miau! Elegí tu sticker", "Pedí tu presupuesto por WhatsApp", "¡Pegá uno en tu termo!", "Yo ya tengo mi estrellita", "Mundo Stickers, miau"];
+    var fi = 0, li = 0, timer = null, z = 5;
+    var lindos = ["¡Qué lindo te quedó!", "¡Quedó hermoso ahí!", "¡Me encanta cómo lo pusiste!", "¡Ese lugar es perfecto!", "¡Miau, qué buen ojo!"];
+
+    function say(t) {
+      bubble.textContent = t; bubble.hidden = false;
+      cat.classList.remove("jump"); void cat.getBoundingClientRect(); cat.classList.add("jump");
+      clearTimeout(timer);
+      timer = setTimeout(function () { bubble.hidden = true; cat.classList.remove("jump"); }, 2400);
+    }
+    cat.addEventListener("click", function () { say(frases[fi++ % frases.length]); });
+
+    board.querySelectorAll(".st").forEach(function (st) {
+      st.addEventListener("pointerdown", function (e) {
+        e.preventDefault();
+        var bw = board.clientWidth, bh = board.clientHeight;
+        var left = st.offsetLeft, top = st.offsetTop, w = st.offsetWidth, h = st.offsetHeight;
+        st.style.width = (w / bw * 100) + "%"; st.style.height = (h / bh * 100) + "%";
+        st.style.right = "auto"; st.style.bottom = "auto";
+        st.style.left = (left / bw * 100) + "%"; st.style.top = (top / bh * 100) + "%";
+        st.style.zIndex = ++z; st.classList.add("drag");
+        st.setPointerCapture(e.pointerId);
+        var sx = e.clientX, sy = e.clientY;
+        function move(ev) {
+          var nx = Math.min(Math.max(left + ev.clientX - sx, 0), bw - w);
+          var ny = Math.min(Math.max(top + ev.clientY - sy, 0), bh - h);
+          st.style.left = (nx / bw * 100) + "%"; st.style.top = (ny / bh * 100) + "%";
+        }
+        function up() {
+          st.classList.remove("drag");
+          st.removeEventListener("pointermove", move);
+          st.removeEventListener("pointerup", up);
+          st.removeEventListener("pointercancel", up);
+          say(lindos[li++ % lindos.length]);
+        }
+        st.addEventListener("pointermove", move);
+        st.addEventListener("pointerup", up);
+        st.addEventListener("pointercancel", up);
+      });
+    });
+
+    document.addEventListener("pointermove", function (e) {
+      var r = cat.getBoundingClientRect();
+      var dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height * 0.4);
+      var d = Math.sqrt(dx * dx + dy * dy) || 1, k = Math.min(1, d / 200) * 3;
+      pupils.forEach(function (p) { p.style.transform = "translate(" + (dx / d * k) + "px," + (dy / d * k) + "px)"; });
+    }, { passive: true });
+  })();
+
+  // ---- Stock ----
+  (function () {
+    var grid = document.getElementById("stock-grid");
+    var empty = document.getElementById("stock-empty");
+    var stock = [];
+    try { stock = JSON.parse(document.getElementById("stock-data").textContent || "[]"); } catch (e) { stock = []; }
+
+    function card(it) {
+      var f = document.createElement("figure");
+      f.className = "card" + (it.qty === 0 ? " out" : "");
+      var img = document.createElement("img");
+      img.src = "/_blob/" + it.id; img.alt = it.name || "Sticker"; img.loading = "lazy";
+      var cap = document.createElement("figcaption");
+      var n = document.createElement("strong"); n.textContent = it.name || "Sticker";
+      var s = document.createElement("span");
+      s.textContent = it.qty === 0 ? "Agotado" : (typeof it.qty === "number" ? "Quedan " + it.qty : "Disponible");
+      var b = document.createElement("button");
+      b.type = "button"; b.className = "btn mini"; b.textContent = "Pedir este"; b.disabled = it.qty === 0;
+      b.addEventListener("click", function () {
+        document.getElementById("det").value = "Quiero el sticker: " + (it.name || "del stock") + ". ";
+        document.getElementById("pedido").scrollIntoView({ behavior: "smooth" });
+      });
+      cap.append(n, s, b); f.append(img, cap);
+      return f;
+    }
+    function render() {
+      grid.textContent = "";
+      stock.forEach(function (it) { grid.appendChild(card(it)); });
+      empty.hidden = stock.length > 0;
+    }
+    render();
+
+    async function setupAdmin() {
+      if (!window.claude || !window.claude.use) return;
+      var assets = await window.claude.use("assets");
+      var art = await window.claude.use("artifact");
+      if (!assets || !art) return;
+      var slot = document.getElementById("admin-slot");
+      slot.innerHTML = '<div class="admin"><strong>Administrar stock</strong>' +
+        '<p>Subí las fotos de tus stickers, poné nombre y cantidad, y tocá Publicar cambios para que las vea todo el mundo.</p>' +
+        '<input id="up" type="file" accept="image/*" multiple>' +
+        '<div id="rows"></div>' +
+        '<div><button class="btn" id="save" type="button">Publicar cambios</button> <span id="msg" role="status"></span></div></div>';
+      var up = document.getElementById("up"), rows = document.getElementById("rows"), msg = document.getElementById("msg"), save = document.getElementById("save");
+
+      function adminRows() {
+        rows.textContent = "";
+        stock.forEach(function (it, i) {
+          var r = document.createElement("div"); r.className = "arow";
+          var im = document.createElement("img"); im.src = "/_blob/" + it.id; im.alt = "";
+          var nm = document.createElement("input"); nm.value = it.name || ""; nm.placeholder = "Nombre"; nm.setAttribute("aria-label", "Nombre");
+          nm.addEventListener("input", function () { it.name = nm.value; render(); });
+          var q = document.createElement("input"); q.type = "number"; q.min = "0"; q.placeholder = "Cant."; q.setAttribute("aria-label", "Cantidad");
+          if (typeof it.qty === "number") q.value = it.qty;
+          q.addEventListener("input", function () {
+            if (q.value === "") { delete it.qty; } else { it.qty = Math.max(0, parseInt(q.value, 10) || 0); }
+            render();
+          });
+          var d = document.createElement("button"); d.type = "button"; d.className = "btn alt mini"; d.textContent = "Quitar";
+          d.addEventListener("click", function () { stock.splice(i, 1); adminRows(); render(); });
+          r.append(im, nm, q, d); rows.appendChild(r);
+        });
+      }
+      adminRows();
+
+      up.addEventListener("change", async function () {
+        var files = Array.prototype.slice.call(up.files);
+        msg.textContent = "Subiendo…";
+        var failed = 0;
+        for (var k = 0; k < files.length; k++) {
+          try {
+            var res = await assets.upload(files[k]);
+            stock.push({ id: res.id, name: files[k].name.replace(/\.[^.]+$/, "") });
+          } catch (e) { failed++; }
+        }
+        up.value = ""; adminRows(); render();
+        msg.textContent = failed ? "No se pudieron subir " + failed + " archivo(s)." : "Listo. Tocá Publicar cambios para guardar.";
+      });
+
+      save.addEventListener("click", async function () {
+        msg.textContent = "Publicando…";
+        var clone = document.documentElement.cloneNode(true);
+        var json = JSON.stringify(stock).split("<").join(String.fromCharCode(92) + "u003c");
+        clone.querySelector("#stock-data").textContent = json;
+        clone.querySelector("#stock-grid").textContent = "";
+        clone.querySelector("#admin-slot").textContent = "";
+        clone.querySelectorAll(".st").forEach(function (el) {
+          el.classList.remove("drag");
+          ["left", "top", "right", "bottom", "width", "height", "z-index"].forEach(function (p) { el.style.removeProperty(p); });
+        });
+        clone.querySelectorAll(".pupil").forEach(function (p) { p.removeAttribute("style"); });
+        clone.querySelector(".mascot").classList.remove("jump");
+        var bb = clone.querySelector("#bubble"); bb.hidden = true; bb.textContent = "";
+        try { await art.publish("<!DOCTYPE html>\n" + clone.outerHTML); }
+        catch (e) { msg.textContent = "No se pudo publicar: " + ((e && e.message) || "error"); }
+      });
+    }
+    setupAdmin();
+  })();
+</script>
+
+
+</body></html>
